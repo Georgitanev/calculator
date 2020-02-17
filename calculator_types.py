@@ -41,9 +41,6 @@ def calc() -> Union[float, str, None]:
     choice: int = int(input("Enter choice(1/2/3/4): "))  # Example 1
     num1: Union[float, int] = float(input("Enter first number: "))  # Example 10
     num2: Union[float, int] = float(input("Enter second number: "))  # Example 10
-    print(
-        '{0} is {1} {2} is {3}{4} is {5}'.format(str(choice), str(type(choice)), str(num1), str(type(num1)), str(num2),
-                                                 str(type(num2))))
     if type(choice) is int and type(num1) is float and type(num2) is float:
         if choice is 1:
             print(num1, "+", num2, "=", add(num1, num2))
@@ -61,7 +58,7 @@ def calc() -> Union[float, str, None]:
             print('Invalid choice input')
             return 'Invalid choice input'
     else:
-        print("Invalid input")
+        print("Invalid input of numbers")
         return 'invalid'
 
 
